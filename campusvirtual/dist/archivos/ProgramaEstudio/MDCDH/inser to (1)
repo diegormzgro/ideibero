@@ -1,0 +1,142 @@
+$pro = $_POST['proPerfil'];
+$id=$_POST['idPerfil'];
+
+$nombre = $_POST['nombre'];
+$primer_ap = $_POST['primer_ap'];
+$segundo_ap = $_POST['segundo_ap'];
+$posgrado = $_POST['posgrado'];
+$sexo = $POST['sexo'];
+$nacionalidad = $_POST['nacionalidad'];
+$fecha_nac = $_POST['fecha_nac'];
+$telefono = $_POST['telefono'];
+$ciudad = $_POST['ciudad'];
+$estado = $_POST['estado'];
+$cp = $_POST['cp'];
+$colonia = $_POST['colonia'];
+$calle = $_POST['calle'];
+$numeroi = $_POST['numeroi'];
+$numeroe = $_POST['numeroe'];
+$email = $_POST['email'];
+$universidad = $_POST['universidad'];
+$pais_e = $_POST['pais_e'];
+$estado_e = $_POST['estado_e'];
+$titulo = $_POST['titulo'];
+$fecha_fin = $_POST['fecha_fin'];
+
+//documentos
+$select_documento = $_POST['select_documento'];
+
+//pagos
+$fecha_ingreso = $_POST['fecha_ingreso'];
+$frecuencia = $_POST['frecuencia'];
+$fecha_pago = $_POST['fecha_pago'];
+$monto_inscripcion = $_POST['monto_inscripcion'];
+$plan_reinscripcion = $_POST['plan_reinscripcion'];
+$plan_mensualidad = $_POST['plan_mensualidad'];
+$beca_inscripcion = $_POST['beca_inscripcion'];
+$monto_reinscripcion = $_POST['monto_reinscripcion'];
+$monto_mensualidad = $_POST['monto_mensualidad'];
+$cantidad_inscripcion = $_POST['cantidad_inscripcion'];
+$beca_reinscripcion = $_POST['beca_reinscripcion'];
+$beca_mensualidad = $_POST['beca_mensualidad'];
+$monto_total_reinscripcion = $_POST['monto_total_reinscripcion'];
+$monto_total_mensualidad = $_POST['monto_total_mensualidad'];
+$beca_recargo_reinscripcion = $_POST['beca_recargo_reinscripcion'];
+$beca_recargo_mensualidad = $_POST['beca_recargo_mensualidad'];
+$monto_recargo_reinscripcion = $_POST['monto_recargo_reinscripcion'];
+$monto_recargo_mensualidad = $_POST['monto_recargo_mensualidad'];
+
+
+//Identidad Institucional
+
+$email_sis = $_POST['email_sis'];
+$pass_sis = $_POST['pass_sis'];
+$emailInst = $_POST['emailInst'];
+$pass_inst = $_POST['pass_inst'];
+$usuario_biblio = $_POST['usuario_biblio'];
+$pass_biblio = $_POST['pass_biblio'];
+
+
+$doc_cv = $_FILES['doc_cv']['tmp_name'];
+
+
+//VERIFICAMOS EL PROCESO
+
+$sql = "INSERT INTO usuario_activo 
+(fecha_inicial,   nombre,   ap_paterno,
+    ap_materno, telefono, email, sexo, fecha_nac, emailInst, pass, calle, num_int, num_ext, ciudad, estado, cod_postal, periodo,
+  nacionalidad, doc_acreditacion, num_doc, 
+  universidad, pais_estudio, estado_estudio,
+  tipo_titulo, fecha_finalizacion, doc_recibo,
+  doc_fotografia, doc_acta, doc_titulo, 
+  doc_identificacion, doc_cv, doc_cert, doc_cedula,
+  id_perfil, id_posgrado, status, bloqueado,       eliminado) ".  "VALUES ('$fecha_ingreso', '$nombre', '$primer_ap', '$segundo_ap', '$telefono', '$email', '$sexo', '$fecha_nac', '$emailInst', '$pass_inst', '$calle', '$numeroi', '$numeroe', '$ciudad', '$estado', '$cp', '', '$nacionalidad', '$select_documento', '', '$universidad', '$pais_e', '$estado_e', '$titulo', '$fecha_fin', '', '', '', '', '', '$doc_cv'; '', '', '1', '$posgrado', '0', '0', '0')";
+		
+
+
+    $sql= "UPDATE usuario_activo SET fecha_inicial='$fecha_ingreso', nombre='$nombre', ap_paterno='$primer_ap', ap_materno='$segundo_ap', telefono='$telefono', email='$email', sexo='$sexo', fecha_nac='$fecha_nac', emailInst='$emailInst', pass='$pass_inst', calle='$calle', num_int='$numeroi', num_ext='$numeroe', ciudad='$ciudad', estado='$estado', cod_postal='$cp', nacionalidad='$nacionalidad', doc_acreditacion='$select_documento', universidad='$universidad', pais_estudio='$pais_e', estado_estudio='$estado_e', tipo_titulo='$titulo'; fecha_finalizacion='$fecha_fin', doc_cv='$doc_cv', id_posgrado='$posgrado',   WHERE id='$id'";
+
+//Variables Tarea
+$formulario_tarea = $_POST['formulario_tarea'];
+$Titulo = $_POST['Titulo'];
+$descripcion = $_POST['descripcion'];
+$Link = $_POST['Link'];
+
+
+$sqlTrabajo = "INSERT INTO catg_tareas
+(idMateria, TituloTarea, Descripcion, Link, Eliminado, Activa) ".  "VALUES ('$formulario_tarea', '$Titulo', '$descripcion', '$Link', '0', '0')";
+    
+
+
+    $sqlTrabajo= "UPDATE catg_tareas SET idMateria='$formulario_tarea', TituloTarea='$Titulo', Descripcion='$descripcion', Link='$Link';   WHERE id='$id'";
+
+//Variables Lecturas
+
+$TituloLec = $_POST['TituloLec'];
+$descripcionLec = $_POST['descripcionLec'];
+$Archivo = $_POST['Archivo'];
+
+$sqlLecturas = "INSERT INTO catg_lecturas
+(idMateria, TituloLectura, Descripcion, Archivo, Eliminado, Activa) ".  "VALUES ('', '$TituloLec', '$descripcionLec', '$Archivo', '0', '0')";
+    
+
+
+    $sqlLecturas= "UPDATE catg_lecturas SET idMateria='', TituloLectura='$TituloLec', Descripcion='$descripcionLec', Archivo='$Archivo';   WHERE id='$id'";
+
+//Variables Catedratico
+
+
+
+$sqlcatedratico = "INSERT INTO catg_catedratico
+(fecha_inicial, nombre, ap_paterno, ap_materno, fecha_nac, telefono, email, emailInst, pass, sexo, cv, foto, Eliminado) ".  "VALUES ('', '', '', '', '', '', '', '', '', '', '', '', '') ";
+    
+
+
+    $sqlcatedratico= "UPDATE catg_catedratico SET fecha_inicial='', nombre='', ap_paterno='', ap_materno='', fecha_nac='', telefono='', email='', emailInst='', pass='', sexo='', cv='', foto='';   WHERE id='$id'";
+
+// Variables Grupo_detalle
+
+
+
+$sqlgrupodetalle = "INSERT INTO catg_grupo_detalle
+(idGrupo, idEstudiante, Calificacion, Estatus,  Eliminado, Bloqueado) ".  "VALUES ('', '', '', '' , '0', '0')";
+    
+
+
+    $sqlgrupodetalle = "UPDATE catg_grupo_detalle SET idGrupo='', idEstudiante='', Calificacion='', Estatus='';   WHERE id='$id'";
+
+//Variables Pago
+
+$alumno = $_POST['alumno'];
+$tipo_pago = $_POST['tipo_pago'];
+$forma_pago = $_POST['forma_pago'];
+
+
+
+$sqlPago = "INSERT INTO catg_pago
+(idAlumno, tipo_pago, forma_pago, totalidad, fecha, fecha_recargo, pago, archivo, descripcion, estatus, Eliminado) ".  "VALUES ('$alumno', '$tipo_pago', '$forma_pago', '', '','','','', '', '', '0')";
+    
+
+
+    $sqlPago= "UPDATE catg_pago SET idAlumno='', tipo_pago='', forma_pago='', totalidad='', fecha='', fecha_recargo='', pago='', Archivo='' descripcion='', estatus='';   WHERE id='$id'";
+

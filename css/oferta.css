@@ -1,0 +1,142 @@
+.oferta {
+    background-image:
+        url('../img/imagenesnuevas/baner75.png');
+        background-repeat:no-repeat;
+        background-position:center;
+        height: 300px;
+        background-size: cover;
+
+        text-align: center;
+        color: white;
+            
+            
+  }
+
+  .ofertaindex {
+    background-image:
+        url('../img/imagenesactualizadas1/baner43.png');
+        background-repeat:no-repeat;
+        background-position:center;
+        height: 300px;
+        text-align: center;
+        color: white;
+            
+            
+  }
+
+  .catedraticos-header {
+    background-image:
+        url('../img/imagenesactualizadas1/baner37.png');
+        background-repeat:no-repeat;
+        background-position:center;
+        height: 250px;
+        background-size: cover;
+
+        text-align: center;
+        color: white;
+            
+            
+  }
+  .eventos-header {
+    background-image:
+        url('../img/imagenesactualizadas1/baner53.png');
+        background-repeat:no-repeat;
+        background-position:center;
+        height: 250px;
+        background-size: cover;
+
+        text-align: center;
+        color: white;
+            
+            
+  }
+
+
+  .idetv {
+    background-image:
+        url('../img/imagenesactualizadas1/baner100.png');
+        background-repeat:no-repeat;
+        background-position:center;
+        height: 300px;
+        background-size: cover;
+
+        text-align: center;
+        color: white;
+            
+            
+  }
+
+  .idetv-movil {
+    background-image:
+        url('../img/imagenesactualizadas1/baner76.png');
+        background-repeat:no-repeat;
+        background-position:center;
+        height: 300px;
+        background-size: cover;
+
+        text-align: center;
+        color: white;
+            
+            
+  }
+
+  
+  .bg-header-index{
+    background-color: rgb(84, 38, 107,0.9);
+    margin-top: 17%;
+    font-size: 40px;
+  }
+  .bg-header-movil{
+    background-color: rgb(84, 38, 107,0.9);
+    margin-top: 50%;
+    font-size: 25px;
+    
+  }
+
+  .font-size-movil{
+    font-size: 25px;
+  }
+
+  .bg-header-2{
+    background-color: rgb(84, 38, 107,0.9);
+    margin-top: 10%;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+  }
+
+  .contacto {
+    background-image:
+        url('../img/imagenesnuevas/baner53.png');
+        background-repeat:no-repeat;
+        background-position:center;
+        height: 300px;
+        background-size: cover;
+        
+        text-align: center;
+        color: white;
+            
+            
+  }
+
+  .admisiones {
+    background-image:
+        url('../img/imagenesactualizadas1/baner51.png');
+        background-repeat:no-repeat;
+        background-position:center;
+        height: 300px;
+        background-size: cover;
+        
+        text-align: center;
+        color: white;
+            
+            
+  }
+
+  .bg-header{
+    background-color: rgb(84, 38, 107,0.9);
+    margin-top: 19%;
+    font-size: 35px;
+  }
+
+  

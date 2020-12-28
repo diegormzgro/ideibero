@@ -1,0 +1,225 @@
+/*borders 
+
+border-right:2px solid rgb(114, 31, 114);
+navbar*/
+
+.card-container{
+	position: relative;
+	width: 18rem;
+	perspective: 200rem;
+	height: 300px;
+}
+
+.card-container:hover .card-front{
+	transform: rotateY(180deg);
+}
+
+.card-container:hover .card-back{
+	transform: rotateY(0deg);
+}
+
+.card-back{
+	transform: rotateY(180deg);
+}
+
+.cardflip{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	transition: all 0.9s;
+	backface-visibility: hidden;
+}
+
+.card-back .card-body{
+	position: relative;
+}
+
+/*
+.card-body a{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin: -15% 0 0 -23%;
+}
+*/
+
+/* flip card */
+
+
+
+/* end flip card */
+.centrar {
+  text-align: center;
+}
+
+.instagram {
+  border-radius: 50%;
+}
+
+.nosotros {
+  background-image:
+      url('../img/banners-laz/nuevo/baner50.jpg');
+      background-repeat:no-repeat;
+      background-position:center;
+      height: 400px;
+          
+          
+}
+
+.maestrias {
+  background-image:
+      url('../img/banners-laz/nuevo/maestrias.jpg');
+      background-repeat:no-repeat;
+      background-position:center;
+      height: 400px;
+          
+          
+}
+
+.doctorados {
+  background-image:
+      url('../img/banners-laz/nuevo/doctorados.jpg');
+      background-repeat:no-repeat;
+      background-position:center;
+      height: 400px;
+          
+          
+}
+
+
+
+
+.nav1 img {
+    width:350px;
+    
+  }
+
+.nav2 img {
+    width: 250px;
+}
+
+  .navbar-brand img {
+    height: 70px;
+    /* put value of image height as your need */
+    float: left;
+    margin-right: 7px;
+  }
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: indigo;
+  font-size: 30px;
+  
+  margin-top: 8px;
+}
+
+
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 20px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+.principal-bg{
+    background: rgb(84, 38, 107);
+}
+
+.btn-theme{
+  background: rgb(84, 38, 107);
+  color: white;
+  
+}
+
+.height-admin {
+  height: 55px;
+}
+
+.btn-theme:hover, .btn-theme:focus, .btn-theme:active, .btn-theme.active, .open>.dropdown-toggle.btn-theme {
+  color: #fff;
+  background-color: rgb(115, 16, 185);
+  border-color: black; /*set the color you want here*/
+}
+
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.youtube-bg{
+    background: #DD4B39;
+}
+.google-bg{
+  background: #DD4B39;
+}
+
+.principal-color {
+    color: rgb(84, 38, 107);
+    
+}
+
+.height-a {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+.container{
+    width: 100%;
+    text-align: center;
+  }
+
