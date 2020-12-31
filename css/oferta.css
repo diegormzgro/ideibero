@@ -124,6 +124,20 @@
         url('../img/imagenesactualizadas1/baner51.png');
         background-repeat:no-repeat;
         background-position:center;
+        height: 400px;
+        background-size: cover;
+        
+        text-align: center;
+        color: white;
+            
+            
+  }
+
+  .admisiones-movil {
+    background-image:
+        url('../img/imagenesactualizadas1/baner51.png');
+        background-repeat:no-repeat;
+        background-position:center;
         height: 300px;
         background-size: cover;
         
@@ -137,6 +151,30 @@
     background-color: rgb(84, 38, 107,0.9);
     margin-top: 19%;
     font-size: 35px;
+  }
+
+  .oferta-new {
+    background-image:
+        url('../img/imagenesactualizadas1/banerdde.png');
+        background-repeat:no-repeat;
+        background-position:center;
+        height: 400px;
+        background-size: cover;
+  
+        text-align: center;
+        color: white;           
+  }
+  
+  .oferta-new-movil {
+    background-image:
+        url('../img/imagenesactualizadas1/movilposgrados/baner77.png');
+        background-repeat:no-repeat;
+        background-position:center;
+        height: 300px;
+        background-size: cover;
+  
+        text-align: center;
+        color: white;                  
   }
 
   

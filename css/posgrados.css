@@ -1,9 +1,9 @@
 .maestriaDE {
     background-image:
-        url('../img/imagenesactualizadas1/baner41.png');
+        url('../img/imagenesactualizadas1/banermde.png');
         background-repeat:no-repeat;
         background-position:center;
-        height: 300px;
+        height: 400px;
         background-size: cover;
 
         text-align: center;
@@ -12,9 +12,9 @@
             
   }
 
-  .maestriaDC {
+  .maestriaDE-movil {
     background-image:
-        url('../img/imagenesactualizadas1/baner39.png');
+        url('../img/imagenesactualizadas1/movilposgrados/baner72.png');
         background-repeat:no-repeat;
         background-position:center;
         height: 300px;
@@ -25,6 +25,80 @@
             
             
   }
+
+.maestriaDC {
+    background-image:
+        url('../img/imagenesactualizadas1/banermdc.png');
+        background-repeat:no-repeat;
+        background-position:center;
+        height: 400px;
+        background-size: cover;
+
+        text-align: center;
+        color: white;           
+}
+
+.maestriaDC-movil {
+    background-image:
+        url('../img/imagenesactualizadas1/movilposgrados/baner71.png');
+        background-repeat:no-repeat;
+        background-position:center;
+        height: 300px;
+        background-size: cover;
+
+        text-align: center;
+        color: white;                  
+}
+
+.doctoradoDE {
+  background-image:
+      url('../img/imagenesactualizadas1/banerdde.png');
+      background-repeat:no-repeat;
+      background-position:center;
+      height: 400px;
+      background-size: cover;
+
+      text-align: center;
+      color: white;           
+}
+
+.doctoradoDE-movil {
+  background-image:
+      url('../img/imagenesactualizadas1/movilposgrados/baner77.png');
+      background-repeat:no-repeat;
+      background-position:center;
+      height: 300px;
+      background-size: cover;
+
+      text-align: center;
+      color: white;                  
+}
+
+.doctoradoDC {
+  background-image:
+      url('../img/imagenesactualizadas1/banerddc.png');
+      background-repeat:no-repeat;
+      background-position:center;
+      height: 400px;
+      background-size: cover;
+
+      text-align: center;
+      color: white;           
+}
+
+.doctoradoDC-movil {
+  background-image:
+      url('../img/imagenesactualizadas1/movilposgrados/baner97.png');
+      background-repeat:no-repeat;
+      background-position:center;
+      height: 300px;
+      background-size: cover;
+
+      text-align: center;
+      color: white;                  
+}
+
+  
 
   .bg-header-posgrado{
     background-color: rgb(84, 38, 107,0.9);
