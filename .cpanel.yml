@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/mo70sxr5ckyt/public_html/ideiberoamerica.com
-    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -R /home/mo70sxr5ckyt/repositories/ideibero/* $DEPLOYPATH
     

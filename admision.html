@@ -135,7 +135,7 @@
                   <p style="text-align: justify;"> Para iniciar tu trámite, ingresa tu correo y una contraseña </p> <br/>
                   <div class="card card-body h-100">
                     
-                    <form id="contact_form" action="php/correo.php" method="POST">
+                    <form id="contact-form" action="php/correo.php" method="POST">
                       <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="usuario" name="usuario" aria-describedby="emailHelp">
@@ -317,12 +317,27 @@
   </footer>
 
   <script>
+    $("#contact-form").on('submit',function(event) {
+        event.preventDefault(); // to prevent default page reloading
+        var dataString = $(this).serialize(); // to get the form data
+        
+        $.ajax({
+            type: "POST",
+            url: "php/correo.php",
+            data: dataString,
+            success: function(data){
+                $('#contact-form')[0].reset(); // to reset form data
+            }
+        }).done(function(data){
+            setTimeout(function () {
+                alert("Form submitted successfully! We'll get back to you soon. Thank you.");
+            }, 2000);
+            //alert("Form submitted successfully! We'll get back to you soon. Thank you."); // This will be called after the ajax executed
+        });
 
-
-   
-   
-   
-   </script>
+    });
+</script>
+  
 
 
   <!--Events Carousel JS-->
